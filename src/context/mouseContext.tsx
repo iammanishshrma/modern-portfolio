@@ -7,7 +7,7 @@ export const MouseContext = createContext({
     cursorChangeHandler: (cursorType: string) => {},
 });
 
-const MouseContextProvider = (props: { children: JSX.Element }) => {
+const MouseContextProvider = (props: { children: React.JSX.Element }) => {
     const [cursorType, setCursorType] = useState("");
 
     const cursorChangeHandler = (cursorType: string) => {
