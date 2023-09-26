@@ -32,7 +32,7 @@ body {
 }
 
 body {
-  color: rgb(var(--tertiary-color));
+  color: rgb(var(--text-color));
   background-color: rgb(var(--primary-color));
 	overflow: hidden;
 	width: 100vw;
@@ -57,10 +57,10 @@ main{
   @media screen and (min-width: 768px) {
     display: flex;
 
-    *:first-child {
+    &>*:first-child {
       width: 20%;
     }
-    *:last-child {
+    &>*:last-child {
       width: 80%;
     }
   }
